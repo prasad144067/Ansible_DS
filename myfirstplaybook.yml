@@ -10,4 +10,11 @@
     - name: i want to install tree
       apt:
         name: tree
-        state: present   
+        state: present
+      when: ansible_os_family= "Debian"
+
+    - name: i want to start the tree
+      apt:
+        name: tree
+        state: started
+      when: ansible_os_family= "Debian" 
