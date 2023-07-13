@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks: 
+  - name: i want to install tree on nodes
+    apt: 
+      name: tree
+      state: present
+
+      
+  

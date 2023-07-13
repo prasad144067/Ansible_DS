@@ -1,0 +1,24 @@
+---
+- students:
+    - name: anil
+      phno: 5667378798
+      address: 
+         doorID: 456
+         street: 2nd
+         Pincode: 522202
+
+    - name: sunil
+      phno: 5656776787
+      address: 
+         doorID: 14-40-67
+         street: Morrispet
+         Pincode: 522202
+
+    - name: venil
+      phno: 5262377889
+      address: 
+         doorID: 503
+         street: SBI bank road
+         Pincode: 522012
+         
+
