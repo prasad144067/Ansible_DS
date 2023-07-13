@@ -16,10 +16,10 @@
     - name: i want to start the tree
       apt:
         name: tree
-        state: started
+        state: present
       when: ansible_os_family == "Debian" 
 
-    - name: i wnat to install redhat
+    - name: i want to install redhat
       dnf:
         name: httpd
         state: present
