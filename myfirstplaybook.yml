@@ -11,10 +11,22 @@
       apt:
         name: tree
         state: present
-      when: ansible_os_family= "Debian"
+      when: ansible_os_family == "Debian"
 
     - name: i want to start the tree
       apt:
         name: tree
         state: started
-      when: ansible_os_family= "Debian" 
+      when: ansible_os_family == "Debian" 
+
+    - name: i wnat to install redhat
+      dnf:
+        name: httpd
+        state: present
+      when: ansible_os_family == "RedHat"   
+
+    - name: i wnat to start redhat
+      ansible.builtin.service:
+        name: httpd
+        state: started
+      when: ansible_os_family == "RedHat"    
