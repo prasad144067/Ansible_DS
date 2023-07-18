@@ -12,14 +12,3 @@
       name: apache2
       state: started
       when: ansible_os_family="Debian" 
-
-
-  - name: i want to ping
-    ping:   
-
-  - name: i want to install git on ubuntu
-    apt:
-      name: git
-      state: present  
-
-        
