@@ -11,4 +11,7 @@
       name: apache2
       state: started
 
+  - name: i want to ping
+    ping:   
+
         
