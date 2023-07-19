@@ -13,15 +13,17 @@
       state: started
     when: ansible_os_family=="Debian"
 
-  - name: i want to install redhat on server
-    dnf:
+  - name: Install the latest version of Apache
+    ansible.builtin.dnf:
       name: httpd
-      state: present   
-    when: ansible_os_family=="Redhat" 
+      state: present
+    when: ansible_os_family=="Redhat"
 
-  - name: i wnat to start redhat
-    service:
+  - name:  i want to start the  Redhat
+    ansible.builtin.dnf:
       name: httpd
       state: started
-    when: ansible_os_family=="Redhat"
-        
+    when: ansible_os_family=="Redhat"  
+
+
+
