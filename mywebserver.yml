@@ -22,6 +22,6 @@
   - name: i wnat to start redhat
     service:
       name: httpd
-      state: present
+      state: started
     when: ansible_os_family=="Redhat"    
       
