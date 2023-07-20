@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: [mywebserver]
   tasks:
   - name: i want  to install webserver
     apt: 
@@ -13,7 +13,7 @@
       state: started
     when: ansible_os_family=="Debian"
 
-  - name: Install the latest version of Apache
+  - name: Install the latest version of Redhat
     ansible.builtin.dnf:
       name: httpd
       state: present
